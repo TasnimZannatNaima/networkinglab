@@ -1,0 +1,37 @@
+1. Enumerating network interfaces:
+python3 list_network_interfaces.py
+
+2.Finding ip address:
+python3 get_interface_ip_address.py --ifname eth0
+
+3. Checking interface status:
+python3 find_network_interface_status.py --ifname eth0
+
+4. Detecting inactive machine:
+sudo python3 detect_inactive_machines.py --scan-hosts 192.168.1.1-3
+
+5.ICMP ping (row socket):
+sudo python3ping_remote_host.py --target-host google.com
+
+6.Ping Using subprocess:
+python3 ping_subprocess.py
+
+7. Broadcast packet scanning:
+sudo python3 broadcast_scanning.py
+
+8.Packet sniffing using subprocess:
+sudo setcap cap_net_raw,cap_net_admin=eip $(which tcpdump)
+tcpdump -c 10 -i eth0
+
+9.Basic talent echo server:
+chmod +x echo_client.py
+sudo python3 echo_client.py 
+
+***Socet programming***
+gcc server.c -o server
+gcc client.c -o client
+ls
+./server
+./client
+
+
