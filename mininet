@@ -1,0 +1,23 @@
+****mininet*****
+ssh mininet@192.168.230.133
+ifconfig
+*start mininet
+sudo mn --topo single,3
+
+*checking available nodes
+>nodes
+
+*displaying network topology
+>net
+
+*displaying detailed information
+>dump
+
+*network interface and configure details of host
+>h1 ifconfig -a
+
+*network interface and configure details of switch
+>s1 ifconfig -a
+
+* test connectivity of h1 and h2
+> h1 ping -c 5 h2
